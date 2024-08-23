@@ -21,7 +21,7 @@ app.get('/', function(req, res) {
     var sql = "Select * from demo";
     con.query(sql, function(error, result) {
         if (error) {
-            console.log("error..");
+            console.log(error);
         }
         else {
             res.json(result);
